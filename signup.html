@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://localhost/website/signup.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<body>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        textarea {
+            height: 100px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+
+     <div class="container">
+        <h2>Signup Form </h2>
+        <form action="http://localhost/website/signup.php" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required=""><br>
+            
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required=""><br>
+            
+            <label for="date">Date of Booking:</label><br>
+            <input type="date" id="date" name="date" required=""><br>
+            
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required=""><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            
+            <input type="submit" value="Signup">
+        </form>
+    </div>
+    
+        All fields are required.
+
+
+
+
+</body></html>
